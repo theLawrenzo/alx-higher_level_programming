@@ -1,3 +1,6 @@
 #!/usr/bin/python3
 for i in range(97, 123):
-    print(chr(i), end='')
+    if i == ord('e') or i == ord('q'):
+        continue
+    else:
+        print("{}".format(chr(i)), end='')
