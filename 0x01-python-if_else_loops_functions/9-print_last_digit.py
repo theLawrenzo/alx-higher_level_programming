@@ -6,7 +6,6 @@ def print_last_digit(number):
             i = i+1
             number = number+1
         number = i
-        
     ld = number % 10
     print("{}".format(ld), end="")
     return ld
