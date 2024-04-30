@@ -4,9 +4,7 @@ import sys
 def infinite_add():
     num = len(sys.argv) - 1
     arg = 0
-    if num == 0:
-        print('0')
-    elif num == 1:
+    if num == 1:
         print(sys.argv[1])
     elif num > 1:
         i = 1
