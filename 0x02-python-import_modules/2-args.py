@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    import sys
 
-def print_args():
     num = len(sys.argv) - 1
     if num == 0:
         print(f"{num} arguments.")
@@ -14,6 +14,3 @@ def print_args():
         while i <= num:
             print(f"{i}: {sys.argv[i]}")
             i += 1
-
-if __name__ == "__main__":
-    print_args()
