@@ -9,6 +9,7 @@ def roman_to_int(roman_string):
     length = len(roman_string)
     val = 0
     i = 0
+
     while i < length:
         if i == length-1:
             val += roman_numerals[roman_string[i]]
