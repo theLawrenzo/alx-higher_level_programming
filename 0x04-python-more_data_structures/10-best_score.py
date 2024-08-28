@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary is None:
-        return None
+    if isinstance(a_dictionary, dict) and a_dictionary.__len__():
+        best = 0
+        best_key = None
 
-    best = 0
-    best_key = None
-
-    for x in a_dictionary.keys():
-        if a_dictionary[x] > best:
-            best = a_dictionary[x]
-            best_key = x
-    
-    return best_key
+        for key in a_dictionary.keys():
+            if a_dictionary[key] > best:
+                best = a_dictionary[key]
+                best_key = key
+        return best_key
+    return None
