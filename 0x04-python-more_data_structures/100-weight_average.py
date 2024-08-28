@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 def weight_average(my_list=[]):
     if isinstance(my_list, list) and len(my_list):
         score = 0
